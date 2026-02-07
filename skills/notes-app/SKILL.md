@@ -1,6 +1,7 @@
 ---
 name: notes-app
-description: Read and write macOS Notes.app using Python. Create, read, update, and delete notes with Markdown support. Markdown is converted to/from Notes.app HTML format.
+description: Read and write macOS Notes.app using Python. Create, read, update, and delete notes with Markdown support. Markdown is converted to/from Notes.app HTML format. Use when users ask to "write a memo", "take notes", "save to Notes", "add to reminder", "create a note", "メモする", "メモを書いて", "ノートに保存", "覚え書き", or want to save information to Notes.app.
+argument-hint: [title]
 ---
 
 # Notes.app Python Scripts Skill
