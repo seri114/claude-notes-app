@@ -1,0 +1,16 @@
+{
+  "name": "claude-notes-app",
+  "version": "1.0.0",
+  "description": "Read and write macOS Notes.app using Python. Create, read, update, and delete notes with Markdown support.",
+  "author": {
+    "name": "seri114"
+  },
+  "homepage": "https://github.com/seri114/claude-notes-app#readme",
+  "repository": "https://github.com/seri114/claude-notes-app",
+  "license": "MIT",
+  "keywords": ["notes", "macos", "apple-notes", "markdown", "productivity"],
+  "skills": "./skills/",
+  "claude": {
+    "minVersion": "1.0.0"
+  }
+}

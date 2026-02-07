@@ -1,0 +1,38 @@
+name: Validate Plugin
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  validate:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate plugin.json
+        run: |
+          if ! command -v jq &> /dev/null; then
+            brew install jq
+          fi
+          jq empty .claude-plugin/plugin.json || exit 1
+
+      - name: Check Python scripts syntax
+        run: |
+          for script in skills/notes-app/scripts/*.py; do
+            python3 -m py_compile "$script" || exit 1
+          done
+
+      - name: Verify SKILL.md exists
+        run: |
+          test -f skills/notes-app/SKILL.md || exit 1
+
+      - name: Check required files
+        run: |
+          test -f README.md || exit 1
+          test -f LICENSE || exit 1
+          test -f .claude-plugin/plugin.json || exit 1
