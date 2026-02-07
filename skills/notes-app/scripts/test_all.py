@@ -2,28 +2,28 @@
 # -*- coding: utf-8 -*-
 """Comprehensive test suite for notes-app Python scripts.
 
-Usage:
+Usage (run from skills/notes-app directory):
     # Run all tests
-    pytest test_all.py
+    pytest scripts/test_all.py
 
     # Run specific test class
-    pytest test_all.py::TestConverter
-    pytest test_all.py::TestEndToEndRoundtrip
+    pytest scripts/test_all.py::TestConverter
+    pytest scripts/test_all.py::TestEndToEndRoundtrip
 
     # Run single test function
-    pytest test_all.py::TestConverter::test_markdown_to_html_h1
-    pytest test_all.py::TestEndToEndRoundtrip::test_e2e_h1_only
+    pytest scripts/test_all.py::TestConverter::test_markdown_to_html_h1
+    pytest scripts/test_all.py::TestEndToEndRoundtrip::test_e2e_h1_only
 
     # Filter by keyword
-    pytest test_all.py -k checkbox
-    pytest test_all.py -k table
-    pytest test_all.py -k "e2e"
+    pytest scripts/test_all.py -k checkbox
+    pytest scripts/test_all.py -k table
+    pytest scripts/test_all.py -k "e2e"
 
     # Verbose output
-    pytest test_all.py -v
+    pytest scripts/test_all.py -v
 
     # Stop on first failure
-    pytest test_all.py -x
+    pytest scripts/test_all.py -x
 
 Test Classes:
     TestConverter           - Unit tests for Markdown↔HTML conversion
