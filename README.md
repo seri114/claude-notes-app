@@ -1,6 +1,11 @@
 # claude-notes-app
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/seri114/claude-notes-app?style=social)](https://github.com/seri114/claude-notes-app/stargazers)
+
 A Claude Code plugin for reading and writing macOS Notes.app using Python. Create, read, update, and delete notes with full Markdown support.
+
+![Demo](https://img.shields.io/badge/Demo-coming%20soon-blue)
 
 ## Features
 
@@ -11,13 +16,18 @@ A Claude Code plugin for reading and writing macOS Notes.app using Python. Creat
 - **Delete notes** by title
 - **List notes** with optional pattern filtering
 - **Markdown ↔ HTML conversion** for Notes.app compatibility
+- **No external dependencies** - Uses Python standard library only
 
 ## Installation
 
-### Using Claude Code Plugin Manager
+### Quick Start
 
 ```bash
-claude plugin install github:seri114/claude-notes-app
+# Add the marketplace
+claude plugin marketplace add seri114/claude-code
+
+# Install the plugin
+claude plugin install claude-notes-app
 ```
 
 ### Manual Installation
@@ -32,9 +42,9 @@ git clone https://github.com/seri114/claude-notes-app.git .claude/plugins/claude
 
 ## Requirements
 
-- macOS with Notes.app
-- Python 3 (standard library only, no pip dependencies)
-- Claude Code with plugin support
+- **macOS** with Notes.app
+- **Python 3** (standard library only, no pip dependencies)
+- **Claude Code** with plugin support
 
 ## Usage
 
@@ -182,6 +192,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 Created by [seri114](https://github.com/seri114)
 
-## Acknowledgments
+---
 
-Built for Claude Code to enable seamless integration with macOS Notes.app.
+**Keywords**: claude-code, claude-plugin, macos, notes-app, apple-notes, markdown, productivity, python
