@@ -149,12 +149,15 @@ These are limitations of Notes.app's internal HTML format, not this plugin:
 
 ### Testing
 
-Run the test script:
+Install pytest and run tests:
 
 ```bash
-cd skills/notes-app/scripts
-python test_all.py
+pip install pytest
+cd skills/notes-app
+pytest scripts/test_all.py -v
 ```
+
+See `scripts/test_all.py` for more test options.
 
 ### Project Structure
 
