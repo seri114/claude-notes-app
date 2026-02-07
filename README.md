@@ -20,7 +20,7 @@ A Claude Code plugin for reading and writing macOS Notes.app using Python. Creat
 
 ## Installation
 
-### Quick Start
+### Recommended: via Marketplace
 
 ```bash
 # Add the marketplace
@@ -30,7 +30,7 @@ claude plugin marketplace add seri114/claude-code
 claude plugin install claude-notes-app
 ```
 
-### Manual Installation
+### Alternative: Manual Installation
 
 ```bash
 # Clone the repository
