@@ -75,76 +75,6 @@ The plugin provides a `/notes-app` skill that you can use directly in Claude Cod
 /notes-app Delete "Old Notes"
 ```
 
-### Direct Script Usage
-
-You can also use the Python scripts directly:
-
-```bash
-# Create a note
-echo "# Shopping List\n\n- Milk\n- Eggs\n- Bread" | \
-  ~/.claude/plugins/claude-notes-app/skills/notes-app/scripts/create_note.py "Shopping List"
-
-# Show a note
-~/.claude/plugins/claude-notes-app/skills/notes-app/scripts/show_note.py "Shopping List"
-
-# Replace note content
-echo "# Updated Shopping List\n\n- Milk\n- Eggs\n- Bread\n- Butter" | \
-  ~/.claude/plugins/claude-notes-app/skills/notes-app/scripts/replace_note.py "Shopping List"
-
-# List notes
-~/.claude/plugins/claude-notes-app/skills/notes-app/scripts/list_notes.py
-
-# Delete a note
-~/.claude/plugins/claude-notes-app/skills/notes-app/scripts/delete_note.py "Shopping List"
-```
-
-## Configuration
-
-### Account and Folder
-
-By default, notes are stored in your iCloud account > "Notes" folder. You can customize this:
-
-```bash
-export NOTES_ACCOUNT="On My Mac"
-export NOTES_FOLDER="Custom Folder"
-```
-
-### Performance
-
-Use the `LIMIT` environment variable to control how many notes are searched (default: 100):
-
-```bash
-LIMIT=500 ./scripts/show_note.py "Note Title"
-```
-
-## Markdown Support
-
-The following Markdown syntax is supported:
-
-| Syntax | Output |
-|--------|--------|
-| `# H1`, `## H2`, `### H3` | Headers |
-| `**bold**`, `*italic*`, `***bolditalic***` | Emphasis |
-| `~~strikethrough~~` | Strikethrough |
-| `- item`, `1. item` | Lists |
-| `[text](url)` | Links |
-| `` `code` `` | Inline code |
-| ```text``` | Code blocks |
-| `\| A \| B \|` | Tables |
-| `- [ ]`, `- [x]` | Checkboxes |
-| `> quote` | Blockquotes |
-
-### Known Limitations
-
-These are limitations of Notes.app's internal HTML format, not this plugin:
-
-- **Ordered lists**: Numbering is not preserved; all items become `1.`
-- **Table separators**: `| --- | --- |` is optional and not stored
-- **Single-word H3**: `### Word` looks like `**Word**` - use multi-word H3 headers
-- **Links**: URLs in links may require special handling
-- **Multi-line list items**: Continuation lines are not preserved
-- **Code block indent**: Use ``` fences for code blocks
-
 ## Development
 
 ### Testing
@@ -197,4 +127,4 @@ Created by [seri114](https://github.com/seri114)
 
 ---
 
-**Keywords**: claude-code, claude-plugin, macos, notes-app, apple-notes, markdown, productivity, python
+**Keywords**: claude-code, claude-plugin, macos, notes-app, apple-notes, markdown, productivity, python, メモ, ノート
