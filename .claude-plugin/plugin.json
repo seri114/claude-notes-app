@@ -9,8 +9,5 @@
   "repository": "https://github.com/seri114/claude-notes-app",
   "license": "MIT",
   "keywords": ["notes", "macos", "apple-notes", "markdown", "productivity"],
-  "skills": "./skills/",
-  "claude": {
-    "minVersion": "1.0.0"
-  }
+  "skills": "./skills/"
 }
