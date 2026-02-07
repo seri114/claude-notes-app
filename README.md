@@ -127,4 +127,4 @@ Created by [seri114](https://github.com/seri114)
 
 ---
 
-**Keywords**: claude-code, claude-plugin, macos, notes-app, apple-notes, markdown, productivity, python
+**Keywords**: claude-code, claude-plugin, macos, notes-app, apple-notes, markdown, productivity, python, メモ, ノート
