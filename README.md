@@ -5,7 +5,7 @@
 
 A Claude Code plugin for reading and writing macOS Notes.app using Python. Create, read, update, and delete notes with full Markdown support.
 
-![Demo](https://img.shields.io/badge/Demo-coming%20soon-blue)
+![Demo](images/demo.gif)
 
 ## Features
 
